@@ -1,0 +1,51 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.bikelock">
+   <!-- 請求舊設備上的舊藍牙權限。 -->
+    <uses-permission android:name="android.permission.BLUETOOTH"
+                     android:maxSdkVersion="30" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"
+                     android:maxSdkVersion="30" />
+    <!-- 僅當您的應用程序查找藍牙設備時才需要。如果您的應用不使用藍牙掃描結果來獲取物理
+         位置信息，您可以強烈斷言您的應用
+         不派生物理位置。 -->
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+    <!-- 僅當您的應用程序使設備可被藍牙發現時才需要設備。 -->
+    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" />
+    <!-- 僅當您的應用與已配對的藍牙通信時才需要
+         設備。 -->
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <!-- 僅當您的應用程序使用藍牙掃描結果來獲取物理位置時才需要。 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+       <application
+        android:label="bikelock"
+        android:name="${applicationName}"
+        android:icon="@mipmap/ic_launcher">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@style/LaunchTheme"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+            android:hardwareAccelerated="true"
+            android:windowSoftInputMode="adjustResize">
+            <!-- 指定一個 Android 主題以立即應用到此 Activity
+                  Android進程已啟動。 此主題對用戶可見
+                  Flutter UI 初始化時。 之後，這個主題繼續
+                  確定 Flutter UI 背後的 Window 背景。 -->
+            <meta-data
+              android:name="io.flutter.embedding.android.NormalTheme"
+              android:resource="@style/NormalTheme"
+              />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <!-- Don't delete the meta-data below.
+             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java -->
+        <meta-data
+            android:name="flutterEmbedding"
+            android:value="2" />
+    </application>
+ 
+</manifest>
