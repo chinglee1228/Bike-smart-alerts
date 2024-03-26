@@ -1,14 +1,23 @@
-### 自行車防盜系統
+# 自行車防盜系統![alt text](/assets/image.png)
 ## 勤益科大專題製作-自行車防盜系統-APP
 用於連接自行製作的防盜警報裝置，
 APP中包含藍芽搜尋列表、連結裝置功能，
-# 主頁
-![alt text](/assets/image-1.png)![alt text](/assets/image-2.png)
-        未連接狀態                         已連接狀態
+搭配自製防盜警報裝置使用。
+### 主畫面-未連接狀態
+![alt text](/assets/readme/image-1.png)
+### 主畫面-已連接狀態(解鎖)
+![alt text](/assets/readme/image-2.png)
+### 主畫面-已連接狀態(上鎖)
+![alt text](assets/readme/image-4.png)
+### 主畫面功能介紹
+* 連接按鈕進駐藍芽列表
+* 圓形按鈕再連接時控制鎖定/解鎖狀態
+* 訊息開關設定是否出現警報提醒
+* 喇叭開關設定警報鈴聲開/關
+### 藍芽搜尋列表
+![alt text](/assets/readme/image-3.png)
 
-
-# 藍芽搜尋列表
-![alt text](/assets/image-3.png)
-使用ardunio uno、HC-05、SW-420、RFID MFRC552製作
-
-![alt text](/assets/image.png)
+### 未來可修正增加的功能
+* 增加資料庫寫入震動數據用於分析
+* 增加裝置判定，藍芽列表只出現指定裝置
+* 目前為通知列及震動提醒，可增加跳出警告視窗提醒
