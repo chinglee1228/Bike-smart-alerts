@@ -1,12 +1,13 @@
 # 自行車防盜系統
 <img src="assets/readme/image.png" width="20%" height="20%"></img>
+
 ## 勤益科大專題製作-自行車防盜系統-APP
 用於連接自行製作的防盜警報裝置，
 APP中包含藍芽搜尋列表、連結裝置功能，
 搭配自製防盜警報裝置使用。
+
 ### 主畫面-未連接狀態
 <img src="assets/readme/image-1.png"></img>
-
 ### 主畫面-已連接狀態(解鎖)
 <img src="assets/readme/image-2.png"></img>
 
